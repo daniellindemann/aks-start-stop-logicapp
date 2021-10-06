@@ -21,13 +21,13 @@ To retrieve AKS information and to execute AKS actions (start and stop), it's a 
     ```
 - Save the `appId` and `password` information for the resource deployment step
 
-> The role *Azure Kubernetes Service Contributor Role* has high permissions, but is built-in and available in every environment. It should not be used in production ready environments. A best practice is to create a custom role which only has the required permissions. A sample custom role definition can be found here: [deployment/aks-automation-executor-role-definition.bicep](deployment/aks-automation-executor-role-definition.bicep)
+> The role *Azure Kubernetes Service Contributor Role* has high permissions, but is built-in and available in every environment. It should not be used in production ready environments. A best practice is to create a custom role which only has the required permissions. A sample custom role definition in bicep format can be found here: [deployment/aks-automation-executor-role-definition.bicep](deployment/aks-automation-executor-role-definition.bicep)
 
 ### 2. Resource deployment
 
 Deploy the resources to your environment and follow the instructions.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/...)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdaniellindemann%2Faks-start-stop-logicapp%2Fmain%2Fdeployment%2Fazuredeploy.json)
 
 After the deployment you'll find 2 logic apps and 1 api connection.
 
